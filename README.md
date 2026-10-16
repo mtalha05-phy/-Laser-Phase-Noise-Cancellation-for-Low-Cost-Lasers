@@ -113,7 +113,7 @@ run('ft_ops_simulation.m')
 
 ---
 
-## 6. Engineering Conclusions for Bachelor's Defense
+## 6. Conclusions
 
 1. **Why Standard Lasers Fail Without Processing**:
    Standard commercial lasers ($\Delta\nu \ge 100\text{ kHz}$) exhibit $1/f^2$ phase noise that is orders of magnitude stronger than weak acoustic signals ($10-200\text{ Hz}$). Without algorithmic or interferometric mitigation, long-haul FT-OPS fails completely.
