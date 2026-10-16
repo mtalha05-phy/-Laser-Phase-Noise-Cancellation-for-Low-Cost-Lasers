@@ -1,21 +1,4 @@
 """
-Delayed Self-Heterodyne (DSH) Processing Module for FT-OPS.
-
-Theory:
-When optical phase is processed through a differential delay tau_d:
-    Delta_tau phi(t) = phi(t) - phi(t - tau_d)
-
-Transfer Function:
-    H_d(f) = 1 - exp(-j * 2 * pi * f * tau_d)
-    |H_d(f)| = 2 * |sin(pi * f * tau_d)|
-
-Effect on Laser Phase Noise:
-    S_{Delta phi_L}(f) = |H_d(f)|^2 * S_{phi_L}(f)
-                       = 4 * sin^2(pi * f * tau_d) * [Delta_nu / (pi * f^2)]
-As f -> 0:
-    lim_{f -> 0} S_{Delta phi_L}(f) = 4 * pi * Delta_nu * tau_d^2 (Finite and Stationary!)
-This completely suppresses the 1/f^2 divergence at DC that masks vibration signals.
-
 This module implements:
 1. Single-Channel DSH Differential Phase Extraction & Regularized Inverse Filtering.
 2. Dual-Channel Reference-Assisted DSH Phase Noise Cancellation.
