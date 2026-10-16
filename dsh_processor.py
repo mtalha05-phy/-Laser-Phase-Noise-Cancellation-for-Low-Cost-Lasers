@@ -1,4 +1,3 @@
-"""
 This module implements:
 1. Single-Channel DSH Differential Phase Extraction & Regularized Inverse Filtering.
 2. Dual-Channel Reference-Assisted DSH Phase Noise Cancellation.
